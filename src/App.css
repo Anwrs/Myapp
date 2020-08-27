@@ -13,19 +13,63 @@ body {
 }
 
 header {
-  border: 1px solid purple;
+  border-bottom: 1px solid purple;
   width: 100%;
   height: 15%;
 }
 
 main {
-  border: 1px solid green;
   width: 100%;
   height: 75%;
 }
 
 footer {
-  border: 1px solid red;
+  display: flex;
   width: 100%;
   height: 10%;
+  background-color: #ececec;
+}
+
+.footer-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav h2 {
+  font-size: 35px;
+  padding: 5px;
+  margin-left: 2%;
+}
+
+.header-nav-list {
+  width: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-list a {
+  margin: 0 10%;
+  text-decoration: none;
+}
+
+.header-nav-list li {
+  margin: 10% 0px;
+  font-size: 25px;
+  list-style-type: none;
+  color: #000000;
 }
