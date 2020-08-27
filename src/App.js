@@ -1,21 +1,18 @@
 import React from 'react';
+import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Main from './Components/Main';
 
 function App() {
-  const sayHello = () => {
-    console.log("hello");
-  }
-
-  const counter = 0;
-
-  const clickMe = () => {
-    counter = counter + 1;
-  }
-
   return (
-    <div>
-      <h1>Hello</h1>
-      <button onClick={clickMe}>{counter}</button>
-    </div>
+    <html>
+      <body>
+        <Header />
+        <Main />
+        <Footer />
+      </body>
+    </html>
   ); 
 }
 
