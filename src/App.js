@@ -1,15 +1,18 @@
 import React from 'react';
+import { render } from "react-dom";
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
-import '@elastic/eui/src/themes/eui/eui_colors_light.scss';
-import '@elastic/eui/src/themes/eui/eui_globals.scss';
+
+import { EuiText } from "@elastic/eui";
+import "@elastic/eui/dist/eui_theme_dark.css";
 
 function App() {
   return (
     <html>
       <body>
+        <EuiText>Ok!</EuiText>;
         <Header />
         <Main />
         <Footer />
@@ -19,4 +22,7 @@ function App() {
 }
 
 export default App; 
+
+const rootElement = document.getElementById("root");
+render(<App />, rootElement);
 
