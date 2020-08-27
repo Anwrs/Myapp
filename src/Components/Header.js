@@ -1,8 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-const element = <FontAwesomeIcon icon={faCoffee} />
+import { faTags } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
   return (
@@ -11,7 +9,7 @@ function Header() {
             <h2>MyApp Webshop</h2>
             <ul className='header-nav-list'>
                 <a href="index.html"><li>Home</li></a>
-                <a href="#?inprogress"><li><FontAwesomeIcon icon={['fab', 'apple']} /> Shop</li></a>
+                <a href="#?inprogress"><li><FontAwesomeIcon icon={faTags} size='xs' pull='left'  /> Shop</li></a>
             </ul>
         </div>
     </header>
