@@ -1,9 +1,11 @@
 import React from 'react';
 import { render } from "react-dom";
 import './App.css';
-import Header from './Components/Header';
 
-import { EuiText } from "@elastic/eui";
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer'
+
 import "@elastic/eui/dist/eui_theme_dark.css";
 
 function App() {
@@ -11,7 +13,8 @@ function App() {
     <html>
       <body>
         <Header />
-        <EuiText>Ok!</EuiText>
+        <Main />
+        <Footer />
       </body>
     </html>
   ); 

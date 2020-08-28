@@ -5,7 +5,6 @@ import {
     EuiHeaderLinks,
     EuiHeaderSectionItem,
     EuiHeaderLogo,
-    EuiIcon,
   } from '@elastic/eui';
   
 
@@ -14,10 +13,10 @@ function Header() {
         <EuiHeader>
             <EuiHeaderSectionItem>
                 <EuiHeaderLogo
-                iconType='logoGolang'
+                iconType='logoMetrics'
                 href='index.html'
                 >
-                <h2>MyApp Webshop</h2>
+                <h1>MyApp</h1>
                 </EuiHeaderLogo>
             </EuiHeaderSectionItem>
 
@@ -27,7 +26,7 @@ function Header() {
                         Home 
                     </EuiHeaderLink>
 
-                    <EuiHeaderLink href="#" iconType='shop'>
+                    <EuiHeaderLink href="#" iconType='analyzeEvent'>
                         Shop
                     </EuiHeaderLink>
 
