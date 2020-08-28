@@ -21,7 +21,7 @@ import {
 
   const ITEM_STYLE = { width: '425px' };
   
-  export default () => (
+  const Home = () => (
     <EuiPage>
       <EuiPageBody component="div">
         <EuiPageContent>
@@ -111,3 +111,5 @@ import {
       </EuiPageBody>
     </EuiPage>
   );
+
+export default Home;

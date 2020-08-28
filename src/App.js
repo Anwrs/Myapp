@@ -3,10 +3,11 @@ import { render } from "react-dom";
 import './App.css';
 import "@elastic/eui/dist/eui_theme_dark.css";
 
+// Components Import
 import Header from './Components/Header';
-import Main from './Components/Main';
 import Footer from './Components/Footer'
 
+// Router Import
 import { 
   BrowserRouter as Router, 
   Route, 
@@ -15,20 +16,26 @@ import {
   Redirect
 } from 'react-router-dom';
 
-//Pagess
+//Pages Import
+import Home from './pages';
+import Shop from './pages/Shop';
+import Error from './pages/404';
+import Help from './pages/Help';
+
 
 function App() {
   return (
-    
     <div>
-    {/* <Router>
-      <Switch>
-        <Route path="/" />
-      </Switch>
-    </Router> */}
-
       <Header />
-      <Main />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path='/Shop' component={Shop} />
+          <Route path='/Help' component={Help} />
+          <Route path='/404' component={Error} />
+          <Redirect to='/404'/>
+        </Switch>
+      </Router>
       <Footer />
     </div>
   ); 

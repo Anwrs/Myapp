@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     EuiHeader,
     EuiHeaderLink,
@@ -13,25 +14,24 @@ function Header() {
             <EuiHeaderSectionItem>
                 <EuiHeaderLogo
                 iconType='logoMetrics'
-                href='index.html'
+                href='/'
                 >
                 <h1>MyApp</h1>
                 </EuiHeaderLogo>
             </EuiHeaderSectionItem>
 
             <EuiHeaderSectionItem>
-             
                                 <EuiHeaderLinks>
-                                    <EuiHeaderLink isActive>
+                                    <EuiHeaderLink href='/'>
                                         Home
                                     </EuiHeaderLink>
 
-                                    <EuiHeaderLink href="#" iconType='analyzeEvent'>
+                                    <EuiHeaderLink href="Shop" iconType='analyzeEvent'>
                                         Shop
                                     </EuiHeaderLink>
 
                                     <EuiHeaderSectionItem>
-                                        <EuiHeaderLink href='#' iconType='iInCircle'>
+                                        <EuiHeaderLink href='Help' iconType='iInCircle'>
                                             Help
                                         </EuiHeaderLink>
                                     </EuiHeaderSectionItem>
