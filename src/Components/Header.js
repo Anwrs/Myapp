@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     EuiHeader,
     EuiHeaderLink,
@@ -6,13 +6,6 @@ import {
     EuiHeaderSectionItem,
     EuiHeaderLogo,
   } from '@elastic/eui';
-
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import Shop from './components/Shop';
-import Error from './components/Error';
-import Navigation from './components/Navigation';
-  
 
 function Header() {
     return (
@@ -27,34 +20,22 @@ function Header() {
             </EuiHeaderSectionItem>
 
             <EuiHeaderSectionItem>
-                <BrowserRouter>
-                    <div>
-                        <Navigation />
-                            <Switch>
              
                                 <EuiHeaderLinks>
                                     <EuiHeaderLink isActive>
-                                        <Route path="/" component={Home} exact/> 
+                                        Home
                                     </EuiHeaderLink>
 
                                     <EuiHeaderLink href="#" iconType='analyzeEvent'>
-                                        <Route path="/about" component={Shop}/>
+                                        Shop
                                     </EuiHeaderLink>
 
                                     <EuiHeaderSectionItem>
                                         <EuiHeaderLink href='#' iconType='iInCircle'>
                                             Help
                                         </EuiHeaderLink>
-
-                                    
                                     </EuiHeaderSectionItem>
-
                                 </EuiHeaderLinks>
-
-                        <Route component={Error}/>
-                        </Switch>
-                    </div> 
-                </BrowserRouter>
             </EuiHeaderSectionItem>
 
 
