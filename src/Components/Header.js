@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
     EuiHeader,
     EuiHeaderLink,
@@ -6,6 +6,12 @@ import {
     EuiHeaderSectionItem,
     EuiHeaderLogo,
   } from '@elastic/eui';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Shop from './components/Shop';
+import Error from './components/Error';
+import Navigation from './components/Navigation';
   
 
 function Header() {
@@ -21,22 +27,34 @@ function Header() {
             </EuiHeaderSectionItem>
 
             <EuiHeaderSectionItem>
-                <EuiHeaderLinks>
-                    <EuiHeaderLink href='index.html' isActive>
-                        Home 
-                    </EuiHeaderLink>
+                <BrowserRouter>
+                    <div>
+                        <Navigation />
+                            <Switch>
+             
+                                <EuiHeaderLinks>
+                                    <EuiHeaderLink isActive>
+                                        <Route path="/" component={Home} exact/> 
+                                    </EuiHeaderLink>
 
-                    <EuiHeaderLink href="#" iconType='analyzeEvent'>
-                        Shop
-                    </EuiHeaderLink>
+                                    <EuiHeaderLink href="#" iconType='analyzeEvent'>
+                                        <Route path="/about" component={Shop}/>
+                                    </EuiHeaderLink>
 
-                    <EuiHeaderSectionItem>
-                        <EuiHeaderLink href='#' iconType='iInCircle'>
-                            Help
-                        </EuiHeaderLink>
-                    </EuiHeaderSectionItem>
+                                    <EuiHeaderSectionItem>
+                                        <EuiHeaderLink href='#' iconType='iInCircle'>
+                                            Help
+                                        </EuiHeaderLink>
 
-                </EuiHeaderLinks>
+                                    
+                                    </EuiHeaderSectionItem>
+
+                                </EuiHeaderLinks>
+
+                        <Route component={Error}/>
+                        </Switch>
+                    </div> 
+                </BrowserRouter>
             </EuiHeaderSectionItem>
 
 
