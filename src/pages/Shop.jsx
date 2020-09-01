@@ -8,7 +8,8 @@ import {
    EuiFlexItem,
    EuiCard,
    EuiButton,
-   EuiSpacer
+   EuiSpacer,
+   EuiFlexGrid
 } from '@elastic/eui';
 
 const cardFooterContent = (
@@ -24,27 +25,81 @@ const Shop = () => {
       <div>
          <EuiSpacer size='xxl'></EuiSpacer>
          <EuiPanel>
-                  <EuiFlexGroup gutterSize="l">
-               <EuiFlexItem>
-                  <EuiCard
-                  
-                  textAlign="left"
-                  image={
-                     <div>
-                      <img
-                        width="20px"
-                        src="https://source.unsplash.com/400x200/?Nature"
-                        alt="Nature"
-                        />
-                    </div>
-                  }
-                  title="Elastic in Nature"
-                  description="Example of a card's description. Stick to one or two sentences."
-                  footer={cardFooterContent}
-                  >
-
-                  </EuiCard>
-               </EuiFlexItem>
+            <EuiFlexGroup gutterSize="l">
+               <EuiFlexGrid columns={4} textAlign='center'>
+                  <EuiFlexItem>
+                     <EuiCard
+                     textAlign="left"
+                     image={
+                        <div>
+                        <img
+                           width="20px"
+                           src="https://source.unsplash.com/400x200/?Nature"
+                           alt="Nature"
+                           />
+                     </div>
+                     }
+                     title="Elastic in Nature"
+                     description="Example of a card's description. Stick to one or two sentences."
+                     footer={cardFooterContent}
+                     >
+                     </EuiCard>
+                  </EuiFlexItem>
+                  <EuiFlexItem>
+                     <EuiCard
+                     textAlign="left"
+                     image={
+                        <div>
+                        <img
+                           width="20px"
+                           src="https://source.unsplash.com/400x200/?Nature"
+                           alt="Nature"
+                           />
+                     </div>
+                     }
+                     title="Elastic in Nature"
+                     description="Example of a card's description. Stick to one or two sentences."
+                     footer={cardFooterContent}
+                     >
+                     </EuiCard>
+                  </EuiFlexItem>
+                  <EuiFlexItem>
+                     <EuiCard
+                     textAlign="left"
+                     image={
+                        <div>
+                        <img
+                           width="20px"
+                           src="https://source.unsplash.com/400x200/?Nature"
+                           alt="Nature"
+                           />
+                     </div>
+                     }
+                     title="Elastic in Nature"
+                     description="Example of a card's description. Stick to one or two sentences."
+                     footer={cardFooterContent}
+                     >
+                     </EuiCard>
+                  </EuiFlexItem>
+                  <EuiFlexItem>
+                     <EuiCard
+                     textAlign="left"
+                     image={
+                        <div>
+                        <img
+                           width="20px"
+                           src="https://source.unsplash.com/400x200/?Nature"
+                           alt="Nature"
+                           />
+                     </div>
+                     }
+                     title="Elastic in Nature"
+                     description="Example of a card's description. Stick to one or two sentences."
+                     footer={cardFooterContent}
+                     >
+                     </EuiCard>
+                  </EuiFlexItem>
+               </EuiFlexGrid>
             </EuiFlexGroup>
          </EuiPanel>
          <EuiSpacer></EuiSpacer>
