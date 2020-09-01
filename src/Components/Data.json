@@ -1,0 +1,34 @@
+    {
+        "Productinfo":[
+            {
+        "id": "1",
+        "product": "tshirt",
+        "name": "MyApp T-Shirt",
+        "colors": "black, white, grey, blue, red"
+    },
+    {
+        "id": "1",
+        "product": "tshirt",
+        "name": "MyApp T-Shirt",
+        "colors": "black, white, grey, blue, red"
+    },
+    {
+        "id": "1",
+        "product": "tshirt",
+        "name": "MyApp T-Shirt",
+        "colors": "black, white, grey, blue, red"
+    },
+    {
+        "id": "1",
+        "product": "tshirt",
+        "name": "MyApp T-Shirt",
+        "colors": "black, white, grey, blue, red"
+    },
+    {
+        "id": "1",
+        "product": "tshirt",
+        "name": "MyApp T-Shirt",
+        "colors": "black, white, grey, blue, red"
+    }
+]
+    }
