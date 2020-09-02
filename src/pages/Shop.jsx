@@ -25,7 +25,7 @@ const Shop = () => {
       <div>
          <EuiSpacer size='xxl'></EuiSpacer>
          <EuiPanel>
-            <EuiFlexGroup gutterSize="l">
+            <EuiFlexGroup>
                <EuiFlexGrid columns={4} textAlign='center'>
                   <EuiFlexItem>
                      <EuiCard
