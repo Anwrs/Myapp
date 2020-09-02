@@ -14,7 +14,6 @@ function Header() {
             <EuiHeaderSectionItem>
                 <EuiHeaderLogo
                 iconType='logoMetrics'
-                href='http://anwrs.github.io/Myapp/'
                 >
                 <h1>MyApp</h1>
                 </EuiHeaderLogo>

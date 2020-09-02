@@ -8,12 +8,13 @@ import Header from './Components/Header';
 import Footer from './Components/Footer'
 
 // Router Import
-import { 
-  BrowserRouter as Router, 
-  Route, 
-  Switch, 
-  Redirect
-} from 'react-router-dom';
+// import { 
+//   BrowserRouter as Router, 
+//   Route, 
+//   Switch, 
+//   Redirect
+// } from 'react-router-dom';
+import {BrowserRouter as Router, Route } from "react-router-dom";
 
 //Pages Import
 import Home from './pages';
@@ -27,13 +28,10 @@ function App() {
     <div>
       <Header />
       <Router>
-        <Switch>
-          <Route exact path="Myapp/" component={Home} />
-          <Route path='Myapp/Shop' component={Shop} />
-          <Route path='Myapp/Help' component={Help} />
-          <Route path='Myapp/404' component={Error} />
-          <Redirect to='Myapp/404'/>
-        </Switch>
+        <Route exact path="/" component={Home} />
+        <Route path='/Shop' component={Shop} />
+        <Route path='/Help' component={Help} />
+        <Route path='/404' component={Error} />
       </Router>
       <Footer />
     </div>
