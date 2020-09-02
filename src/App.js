@@ -28,7 +28,7 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route exact path="http://anwrs.github.io/Myapp/" component={Home} />
+          <Route exact path="http://anwrs.github.io/Myapp" component={Home} />
           <Route path='http://anwrs.github.io/Myapp/Shop' component={Shop} />
           <Route path='http://anwrs.github.io/Myapp/Help' component={Help} />
           <Route path='http://anwrs.github.io/Myapp/404' component={Error} />
