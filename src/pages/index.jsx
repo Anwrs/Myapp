@@ -56,7 +56,7 @@ import {
 
             <EuiPanel textAlign='center'>
                 <EuiLink 
-                href='shop.html'>
+                href='/Shop'>
                     Check out our exclusive webshop!
                 </EuiLink>
             </EuiPanel>
