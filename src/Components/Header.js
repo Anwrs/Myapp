@@ -14,7 +14,7 @@ function Header() {
             <EuiHeaderSectionItem>
                 <EuiHeaderLogo
                 iconType='logoMetrics'
-                href='http://anwrs.github.io/Myapp'
+                href='http://anwrs.github.io/Myapp/'
                 >
                 <h1>MyApp</h1>
                 </EuiHeaderLogo>
@@ -22,7 +22,7 @@ function Header() {
 
             <EuiHeaderSectionItem>
                                 <EuiHeaderLinks>
-                                    <EuiHeaderLink href='http://anwrs.github.io/Myapp'>
+                                    <EuiHeaderLink href='/'>
                                         Home
                                     </EuiHeaderLink>
 
