@@ -14,7 +14,7 @@ import Footer from './Components/Footer'
 //   Switch, 
 //   Redirect
 // } from 'react-router-dom';
-import {BrowserRouter as Router, Route } from "react-router-dom";
+import {BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
 //Pages Import
 import Home from './pages';
@@ -32,6 +32,7 @@ function App() {
         <Route path='/Shop' component={Shop} />
         <Route path='/Help' component={Help} />
         <Route path='/404' component={Error} />
+        <Redirect path='/404'></Redirect>
       </Router>
       <Footer />
     </div>
