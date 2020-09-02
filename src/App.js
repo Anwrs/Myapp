@@ -16,7 +16,7 @@ import {
 } from 'react-router-dom';
 
 //Pages Import
-import Home from './pages';
+import Home from './pages/index';
 import Shop from './pages/Shop';
 import Error from './pages/404';
 import Help from './pages/Help';
