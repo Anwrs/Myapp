@@ -29,10 +29,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="Myapp/" component={Home} />
-          <Route path='Myapp/Shop' component={Shop} />
-          <Route path='Myapp/Help' component={Help} />
-          <Route path='Myapp/404' component={Error} />
-          <Redirect to='Myapp/404'/>
+          <Route path='/Shop' component={Shop} />
+          <Route path='/Help' component={Help} />
+          <Route path='/404' component={Error} />
+          <Redirect to='/404'/>
         </Switch>
       </Router>
       <Footer />
