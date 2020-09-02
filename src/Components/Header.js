@@ -25,12 +25,12 @@ function Header() {
                                         Home
                                     </EuiHeaderLink>
 
-                                    <EuiHeaderLink href="Shop" iconType='analyzeEvent'>
+                                    <EuiHeaderLink href="/Shop" iconType='analyzeEvent'>
                                         Shop
                                     </EuiHeaderLink>
 
                                     <EuiHeaderSectionItem>
-                                        <EuiHeaderLink href='Help' iconType='iInCircle'>
+                                        <EuiHeaderLink href='/Help' iconType='iInCircle'>
                                             Help
                                         </EuiHeaderLink>
                                     </EuiHeaderSectionItem>
