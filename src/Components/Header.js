@@ -22,7 +22,7 @@ function Header() {
 
             <EuiHeaderSectionItem>
                                 <EuiHeaderLinks>
-                                    <EuiHeaderLink href='http://anwrs.github.io/Myapp'>
+                                    <EuiHeaderLink href='http://anwrs.github.io/Myapp/'>
                                         Home
                                     </EuiHeaderLink>
 

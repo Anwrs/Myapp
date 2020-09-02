@@ -29,10 +29,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="http://anwrs.github.io/Myapp/" component={Home} />
-          <Route path='/Shop' component={Shop} />
-          <Route path='/Help' component={Help} />
-          <Route path='/404' component={Error} />
-          <Redirect to='/404'/>
+          <Route path='http://anwrs.github.io/Myapp/Shop' component={Shop} />
+          <Route path='http://anwrs.github.io/Myapp/Help' component={Help} />
+          <Route path='http://anwrs.github.io/Myapp/404' component={Error} />
+          <Redirect to='http://anwrs.github.io/Myapp/404'/>
         </Switch>
       </Router>
       <Footer />
