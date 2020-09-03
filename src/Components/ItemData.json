@@ -1,18 +1,26 @@
 [
     {
         "id": "1",
-        "product": "T-shirt",
+        "product": "Shirts",
         "name": "MyApp T-Shirt",
         "colors": "Black, White, Grey, Blue, Green, Red",
         "price": "€ 20",
         "url": "/images/tshirtTemplate.jpg"
     },
     {
+        "id": "9",
+        "product": "Shirts",
+        "name": "MyApp Polo",
+        "colors": "Black, White, Grey, Blue, Green, Red",
+        "price": "€ 25",
+        "url": "/images/poloTemplate.jpg"
+    },
+    {
         "id": "4",
-        "product": "Sweater",
+        "product": "Sweaters",
         "name": "MyApp Sweater",
         "colors": "Black, White, Grey, Red",
-        "price": "€ 25",
+        "price": "€ 27",
         "url": "/images/sweaterTemplate.jpg"
     },
     {
@@ -32,11 +40,35 @@
         "url": "/images/pantsTemplate.jpg"
     },
     {
+        "id": "7",
+        "product": "Jacket & Vests",
+        "name": "MyApp Biker Jacket",
+        "colors": "Black",
+        "price": "€ 40",
+        "url": "/images/bikerjacketTemplate.jpg"
+    },
+    {
+        "id": "8",
+        "product": "Jacket & Vests",
+        "name": "MyApp Denim Vest",
+        "colors": "Black, Grey, Blue",
+        "price": "€ 30",
+        "url": "/images/denimvestTemplate.jpg"
+    },
+    {
         "id": "3",
         "product": "Cap",
         "name": "MyApp Cap",
         "colors": "Black, White, Blue, Green, Red",
         "price": "€ 10",
         "url": "/images/capTemplate.jpg"
+    },
+    {
+        "id": "6",
+        "product": "Watch",
+        "name": "MyApp Fitband",
+        "colors": "Black, Grey",
+        "price": "€ 50",
+        "url": "/images/fitbandTemplate.jpg"
     }
 ]

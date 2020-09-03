@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import ItemData from '../Components/ItemData.json';
 import './img.css' 
 
@@ -12,19 +12,32 @@ import {
    EuiSpacer,
    EuiText,
    EuiFlexGrid,
+   EuiSelectable,
 } from '@elastic/eui';
+
+var CardItems = 0;
+
+function Alert() {
+   CardItems = CardItems + 1;
+   alert("Your item has been added to your cart");
+   alert("Items in card: " + CardItems);
+}
 
 const CardFooter = (
       <EuiFlexGroup justifyContent="flexEnd">
          <EuiFlexItem grow={false}>
+         <EuiButton onClick={Alert}>
+             In Cart <EuiIcon type="importAction" ></EuiIcon>
+            </EuiButton>
+         </EuiFlexItem>
+         <EuiFlexItem grow={false}>
             <EuiButton href="#">
-               Shop <EuiIcon type="savedObjectsApp" ></EuiIcon>
+               Check it out <EuiIcon type="eye" ></EuiIcon>
             </EuiButton>
          </EuiFlexItem>
       </EuiFlexGroup>
 )
 
- 
 const Shop = () => {
     return (
       <div>
