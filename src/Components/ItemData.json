@@ -3,40 +3,40 @@
         "id": "1",
         "product": "T-shirt",
         "name": "MyApp T-Shirt",
-        "colors": "Black, White, Grey, Blue, Red",
+        "colors": "Black, White, Grey, Blue, Green, Red",
         "price": "€ 20",
-        "imgurl": ""
-    },
-    {
-        "id": "2",
-        "product": "Hoodie",
-        "name": "MyApp Hoodie",
-        "colors": "Black, White, Grey",
-        "price": "€ 30",
-        "imgurl": ""
-    },
-    {
-        "id": "3",
-        "product": "Cap",
-        "name": "MyApp Cap",
-        "colors": "Black, White",
-        "price": "€ 10",
-        "imgurl": ""
+        "url": "/images/tshirtTemplate.jpg"
     },
     {
         "id": "4",
         "product": "Sweater",
         "name": "MyApp Sweater",
-        "colors": "Black, White, Blue, Red",
+        "colors": "Black, White, Grey, Red",
         "price": "€ 25",
-        "imgurl": ""
+        "url": "/images/sweaterTemplate.jpg"
+    },
+    {
+        "id": "2",
+        "product": "Hoodie",
+        "name": "MyApp Hoodie",
+        "colors": "Black, White, Grey, Blue, Green, Red",
+        "price": "€ 30",
+        "url": "/images/hoodieTemplate.jpg"
     },
     {
         "id": "5",
-        "product": "Pants",
-        "name": "MyApp Pants",
-        "colors": "Black, Grey",
+        "product": "Jeans",
+        "name": "MyApp Jeans",
+        "colors": "Black, Grey, Blue",
         "price": "€ 25",
-        "imgurl": ""
+        "url": "/images/pantsTemplate.jpg"
+    },
+    {
+        "id": "3",
+        "product": "Cap",
+        "name": "MyApp Cap",
+        "colors": "Black, White, Blue, Green, Red",
+        "price": "€ 10",
+        "url": "/images/capTemplate.jpg"
     }
 ]

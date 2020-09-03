@@ -1,5 +1,6 @@
 import React from 'react';
 import ItemData from '../Components/ItemData.json';
+import './img.css' 
 
 import {
    EuiPanel,
@@ -30,7 +31,7 @@ const Shop = () => {
          <EuiSpacer size='xxl'></EuiSpacer>
          <EuiText textAlign='center'>
             <h1>MyApp Webshop</h1>
-            <p>For you're desire</p>
+            <p>At your service</p>
          </EuiText>
          <EuiPanel>
             <EuiFlexGroup gutterSize="l">
@@ -45,8 +46,8 @@ const Shop = () => {
                               description={ post.colors }
                               image={
                                  <div>
-                                 <img
-                                    src="https://source.unsplash.com/400x200/?Nature"
+                                 <img className="CardImg"
+                                    src={ process.env.PUBLIC_URL + post.url }
                                     alt="example-design"
                                     />
                               </div>
