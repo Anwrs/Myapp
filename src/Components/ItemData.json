@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "product": "T-shirt",
+        "name": "MyApp T-Shirt",
+        "colors": "Black, White, Grey, Blue, Red",
+        "price": "€ 20",
+        "imgurl": ""
+    },
+    {
+        "id": "2",
+        "product": "Hoodie",
+        "name": "MyApp Hoodie",
+        "colors": "Black, White, Grey",
+        "price": "€ 30",
+        "imgurl": ""
+    },
+    {
+        "id": "3",
+        "product": "Cap",
+        "name": "MyApp Cap",
+        "colors": "Black, White",
+        "price": "€ 10",
+        "imgurl": ""
+    },
+    {
+        "id": "4",
+        "product": "Sweater",
+        "name": "MyApp Sweater",
+        "colors": "Black, White, Blue, Red",
+        "price": "€ 25",
+        "imgurl": ""
+    },
+    {
+        "id": "5",
+        "product": "Pants",
+        "name": "MyApp Pants",
+        "colors": "Black, Grey",
+        "price": "€ 25",
+        "imgurl": ""
+    }
+]

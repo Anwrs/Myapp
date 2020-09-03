@@ -1,104 +1,63 @@
 import React from 'react';
-import Data from '../Components/Data.json';
+import ItemData from '../Components/ItemData.json';
 
 import {
    EuiPanel,
-   EuiText,
+   EuiIcon,
    EuiFlexGroup,
    EuiFlexItem,
    EuiCard,
    EuiButton,
    EuiSpacer,
-   EuiFlexGrid
+   EuiText,
+   EuiFlexGrid,
 } from '@elastic/eui';
 
-const cardFooterContent = (
-   <EuiFlexGroup justifyContent="flexEnd">
-     <EuiFlexItem grow={false}>
-       <EuiButton>Go for it</EuiButton>
-     </EuiFlexItem>
-   </EuiFlexGroup>
- );
+const CardFooter = (
+      <EuiFlexGroup justifyContent="flexEnd">
+         <EuiFlexItem grow={false}>
+            <EuiButton href="#">
+               Shop <EuiIcon type="savedObjectsApp" ></EuiIcon>
+            </EuiButton>
+         </EuiFlexItem>
+      </EuiFlexGroup>
+)
+
  
 const Shop = () => {
     return (
       <div>
          <EuiSpacer size='xxl'></EuiSpacer>
+         <EuiText textAlign='center'>
+            <h1>MyApp Webshop</h1>
+            <p>For you're desire</p>
+         </EuiText>
          <EuiPanel>
             <EuiFlexGroup gutterSize="l">
                <EuiFlexGrid columns={4} textAlign='center'>
-                  <EuiFlexItem>
-                     <EuiCard
-                     textAlign="left"
-                     image={
-                        <div>
-                        <img
-                           width="20px"
-                           src="https://source.unsplash.com/400x200/?Nature"
-                           alt="Nature"
-                           />
-                     </div>
-                     }
-                     title="Elastic in Nature"
-                     description="Example of a card's description. Stick to one or two sentences."
-                     footer={cardFooterContent}
-                     >
-                     </EuiCard>
-                  </EuiFlexItem>
-                  <EuiFlexItem>
-                     <EuiCard
-                     textAlign="left"
-                     image={
-                        <div>
-                        <img
-                           width="20px"
-                           src="https://source.unsplash.com/400x200/?Nature"
-                           alt="Nature"
-                           />
-                     </div>
-                     }
-                     title="Elastic in Nature"
-                     description="Example of a card's description. Stick to one or two sentences."
-                     footer={cardFooterContent}
-                     >
-                     </EuiCard>
-                  </EuiFlexItem>
-                  <EuiFlexItem>
-                     <EuiCard
-                     textAlign="left"
-                     image={
-                        <div>
-                        <img
-                           width="20px"
-                           src="https://source.unsplash.com/400x200/?Nature"
-                           alt="Nature"
-                           />
-                     </div>
-                     }
-                     title="Elastic in Nature"
-                     description="Example of a card's description. Stick to one or two sentences."
-                     footer={cardFooterContent}
-                     >
-                     </EuiCard>
-                  </EuiFlexItem>
-                  <EuiFlexItem>
-                     <EuiCard
-                     textAlign="left"
-                     image={
-                        <div>
-                        <img
-                           width="20px"
-                           src="https://source.unsplash.com/400x200/?Nature"
-                           alt="Nature"
-                           />
-                     </div>
-                     }
-                     title="Elastic in Nature"
-                     description="Example of a card's description. Stick to one or two sentences."
-                     footer={cardFooterContent}
-                     >
-                     </EuiCard>
-                  </EuiFlexItem>
+
+                     { ItemData.map(post => {
+                        return(
+                           <EuiFlexItem key={ post.id }>
+                              <EuiCard
+                              textAlign="left"
+                              title={ post.name }
+                              description={ post.colors }
+                              image={
+                                 <div>
+                                 <img
+                                    src="https://source.unsplash.com/400x200/?Nature"
+                                    alt="example-design"
+                                    />
+                              </div>
+                              } 
+                              footer= { CardFooter }
+                              >
+                              <p>Price: { post.price }</p>
+                              </EuiCard>
+                           </EuiFlexItem>
+                        )
+                     }) }
                </EuiFlexGrid>
             </EuiFlexGroup>
          </EuiPanel>
